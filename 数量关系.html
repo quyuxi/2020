@@ -1,0 +1,230 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>数量关系</title><link href='https://fonts.loli.net/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { margin: 0px; padding: 0px; height: auto; bottom: 0px; top: 0px; left: 0px; right: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 40px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+  .CodeMirror-sizer { margin-left: 0px !important; }
+  .CodeMirror-gutters { display: none !important; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 2; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px !important; }
+tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-diagram-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; }
+  #write { margin-top: 0px; padding-top: 0px; border-color: transparent !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  html.blink-to-pdf { font-size: 13px; }
+  .typora-export #write { padding-left: 32px; padding-right: 32px; padding-bottom: 0px; break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.8; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.md-inline-math .MathJax_SVG .noError { display: none !important; }
+.html-for-mac .inline-math-svg .MathJax_SVG { vertical-align: 0.2px; }
+.md-math-block .MathJax_SVG_Display { text-align: center; margin: 0px; position: relative; text-indent: 0px; max-width: none; max-height: none; min-height: 0px; min-width: 100%; width: auto; overflow-y: hidden; display: block !important; }
+.MathJax_SVG_Display, .md-inline-math .MathJax_SVG_Display { width: auto; margin: inherit; display: inline-block !important; }
+.MathJax_SVG .MJX-monospace { font-family: var(--monospace); }
+.MathJax_SVG .MJX-sans-serif { font-family: sans-serif; }
+.MathJax_SVG { display: inline; font-style: normal; font-weight: 400; line-height: normal; zoom: 90%; text-indent: 0px; text-align: left; text-transform: none; letter-spacing: normal; word-spacing: normal; overflow-wrap: normal; white-space: nowrap; float: none; direction: ltr; max-width: none; max-height: none; min-width: 0px; min-height: 0px; border: 0px; padding: 0px; margin: 0px; }
+.MathJax_SVG * { transition: none 0s ease 0s; }
+.MathJax_SVG_Display svg { vertical-align: middle !important; margin-bottom: 0px !important; margin-top: 0px !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="mermaid"] svg, [lang="flow"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+
+
+:root { --side-bar-bg-color: #fafafa; --control-text-color: #777; }
+html { font-size: 16px; }
+body { font-family: "Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: rgb(51, 51, 51); line-height: 1.6; }
+#write { max-width: 860px; margin: 0px auto; padding: 30px 30px 100px; }
+#write > ul:first-child, #write > ol:first-child { margin-top: 30px; }
+a { color: rgb(65, 131, 196); }
+h1, h2, h3, h4, h5, h6 { position: relative; margin-top: 1rem; margin-bottom: 1rem; font-weight: bold; line-height: 1.4; cursor: text; }
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor { text-decoration: none; }
+h1 tt, h1 code { font-size: inherit; }
+h2 tt, h2 code { font-size: inherit; }
+h3 tt, h3 code { font-size: inherit; }
+h4 tt, h4 code { font-size: inherit; }
+h5 tt, h5 code { font-size: inherit; }
+h6 tt, h6 code { font-size: inherit; }
+h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom: 1px solid rgb(238, 238, 238); }
+h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom: 1px solid rgb(238, 238, 238); }
+h3 { font-size: 1.5em; line-height: 1.43; }
+h4 { font-size: 1.25em; }
+h5 { font-size: 1em; }
+h6 { font-size: 1em; color: rgb(119, 119, 119); }
+p, blockquote, ul, ol, dl, table { margin: 0.8em 0px; }
+li > ol, li > ul { margin: 0px; }
+hr { height: 2px; padding: 0px; margin: 16px 0px; background-color: rgb(231, 231, 231); border: 0px none; overflow: hidden; box-sizing: content-box; }
+li p.first { display: inline-block; }
+ul, ol { padding-left: 30px; }
+ul:first-child, ol:first-child { margin-top: 0px; }
+ul:last-child, ol:last-child { margin-bottom: 0px; }
+blockquote { border-left: 4px solid rgb(223, 226, 229); padding: 0px 15px; color: rgb(119, 119, 119); }
+blockquote blockquote { padding-right: 0px; }
+table { padding: 0px; word-break: initial; }
+table tr { border-top: 1px solid rgb(223, 226, 229); margin: 0px; padding: 0px; }
+table tr:nth-child(2n), thead { background-color: rgb(248, 248, 248); }
+table tr th { font-weight: bold; border-width: 1px 1px 0px; border-top-style: solid; border-right-style: solid; border-left-style: solid; border-top-color: rgb(223, 226, 229); border-right-color: rgb(223, 226, 229); border-left-color: rgb(223, 226, 229); border-image: initial; border-bottom-style: initial; border-bottom-color: initial; margin: 0px; padding: 6px 13px; }
+table tr td { border: 1px solid rgb(223, 226, 229); margin: 0px; padding: 6px 13px; }
+table tr th:first-child, table tr td:first-child { margin-top: 0px; }
+table tr th:last-child, table tr td:last-child { margin-bottom: 0px; }
+.CodeMirror-lines { padding-left: 4px; }
+.code-tooltip { box-shadow: rgba(0, 28, 36, 0.3) 0px 1px 1px 0px; border-top: 1px solid rgb(238, 242, 242); }
+.md-fences, code, tt { border: 1px solid rgb(231, 234, 237); background-color: rgb(248, 248, 248); border-radius: 3px; padding: 2px 4px 0px; font-size: 0.9em; }
+code { background-color: rgb(243, 244, 244); padding: 0px 2px; }
+.md-fences { margin-bottom: 15px; margin-top: 15px; padding-top: 8px; padding-bottom: 6px; }
+.md-task-list-item > input { margin-left: -1.3em; }
+@media print {
+  html { font-size: 13px; }
+  table, pre { break-inside: avoid; }
+  pre { overflow-wrap: break-word; }
+}
+.md-fences { background-color: rgb(248, 248, 248); }
+#write pre.md-meta-block { padding: 1rem; font-size: 85%; line-height: 1.45; background-color: rgb(247, 247, 247); border: 0px; border-radius: 3px; color: rgb(119, 119, 119); margin-top: 0px !important; }
+.mathjax-block > .code-tooltip { bottom: 0.375rem; }
+.md-mathjax-midline { background: rgb(250, 250, 250); }
+#write > h3.md-focus::before { left: -1.5625rem; top: 0.375rem; }
+#write > h4.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h5.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+#write > h6.md-focus::before { left: -1.5625rem; top: 0.285714rem; }
+.md-image > .md-meta { border-radius: 3px; padding: 2px 0px 0px 4px; font-size: 0.9em; color: inherit; }
+.md-tag { color: rgb(167, 167, 167); opacity: 1; }
+.md-toc { margin-top: 20px; padding-bottom: 20px; }
+.sidebar-tabs { border-bottom: none; }
+#typora-quick-open { border: 1px solid rgb(221, 221, 221); background-color: rgb(248, 248, 248); }
+#typora-quick-open-item { background-color: rgb(250, 250, 250); border-color: rgb(254, 254, 254) rgb(229, 229, 229) rgb(229, 229, 229) rgb(238, 238, 238); border-style: solid; border-width: 1px; }
+.on-focus-mode blockquote { border-left-color: rgba(85, 85, 85, 0.12); }
+header, .context-menu, .megamenu-content, footer { font-family: "Segoe UI", Arial, sans-serif; }
+.file-node-content:hover .file-node-icon, .file-node-content:hover .file-node-open-state { visibility: visible; }
+.mac-seamless-mode #typora-sidebar { background-color: var(--side-bar-bg-color); }
+.md-lang { color: rgb(180, 101, 77); }
+.html-for-mac .context-menu { --item-hover-bg-color: #E6F0FE; }
+#md-notification .btn { border: 0px; }
+.dropdown-menu .divider { border-color: rgb(229, 229, 229); }
+.ty-preferences .window-content { background-color: rgb(250, 250, 250); }
+.ty-preferences .nav-group-item.active { color: white; background: rgb(153, 153, 153); }
+
+
+</style>
+</head>
+<body class='typora-export os-windows' >
+<div  id='write'  class = 'is-node'><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><div class='md-toc' mdtype='toc'><p class="md-toc-content"><span class="md-toc-item md-toc-h1" data-ref="n7"><a class="md-toc-inner" href="#数字特性">数字特性</a></span><span class="md-toc-item md-toc-h2" data-ref="n8"><a class="md-toc-inner" href="#一整除特性">一、<strong>整除特性</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n9"><a class="md-toc-inner" href="#1整除"><strong>1、整除</strong> </a></span><span class="md-toc-item md-toc-h3" data-ref="n34"><a class="md-toc-inner" href="#2关于整除的其他注意事项"><strong>2、关于整除的其他注意事项</strong> </a></span><span class="md-toc-item md-toc-h2" data-ref="n41"><a class="md-toc-inner" href="#二奇偶性">二、<strong>奇偶性</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n57"><a class="md-toc-inner" href="#三质合性"><strong>三、质合性</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n67"><a class="md-toc-inner" href="#四公约数与公倍数"><strong>四</strong>、<strong>公约数与公倍数</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n68"><a class="md-toc-inner" href="#1核心知识">1、<strong>核心知识</strong> </a></span><span class="md-toc-item md-toc-h3" data-ref="n79"><a class="md-toc-inner" href="#2求最大公约数和最小公倍数">2、<strong>求最大公约数和最小公倍数</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n84"><a class="md-toc-inner" href="#五同余问题"><strong>五、同余问题</strong></a></span><span class="md-toc-item md-toc-h3" data-ref="n86"><a class="md-toc-inner" href="#公务员考试中的四种常考形式"><strong>公务员考试中的四种常考形式</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n102"><a class="md-toc-inner" href="#六乘方尾数">六、<strong>乘方尾数</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n107"><a class="md-toc-inner" href="#七不定方程"><strong>七、不定方程</strong> </a></span><span class="md-toc-item md-toc-h1" data-ref="n118"><a class="md-toc-inner" href="#数列"><strong>数列</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n119"><a class="md-toc-inner" href="#一等差数列"><strong>一、等差数列</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n131"><a class="md-toc-inner" href="#二等比数列"><strong>二、等比数列</strong></a></span><span class="md-toc-item md-toc-h1" data-ref="n136"><a class="md-toc-inner" href="#计数模型"><strong>计数模型</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n137"><a class="md-toc-inner" href="#一鸡兔同笼"><strong>一、鸡兔同笼</strong></a></span><span class="md-toc-item md-toc-h1" data-ref="n144"><a class="md-toc-inner" href="#排列组合"><strong>排列组合</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n147"><a class="md-toc-inner" href="#一两个原理"><strong>一、两个原理</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n153"><a class="md-toc-inner" href="#二排列组合"><strong>二、排列组合</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n161"><a class="md-toc-inner" href="#三特殊优先"><strong>三、特殊优先</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n165"><a class="md-toc-inner" href="#四捆绑法"><strong>四、捆绑法</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n178"><a class="md-toc-inner" href="#五插空法"><strong>五、插空法</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n189"><a class="md-toc-inner" href="#六插板法"><strong>六、插板法</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n199"><a class="md-toc-inner" href="#七正难则反"><strong>七、正难则反</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n203"><a class="md-toc-inner" href="#八错误排列"><strong>八、错误排列</strong></a></span><span class="md-toc-item md-toc-h2" data-ref="n207"><a class="md-toc-inner" href="#九圆周排列"><strong>九、圆周排列</strong></a></span></p></div><p>&nbsp;</p><p>&nbsp;</p><h1><a name="数字特性" class="md-header-anchor"></a><span>数字特性</span></h1><h2><a name="一整除特性" class="md-header-anchor"></a><span>一、</span><strong><span>整除特性</span></strong></h2><h3><a name="1整除" class="md-header-anchor"></a><strong><span>1、整除</span></strong><span> </span></h3><ol start='' ><li><span>被 2 整除特性：偶数 </span></li><li><span>被 3 整除特性：一个数字的每位数字相加能否被 3 整除</span></li><li><span>被 9 整除特性：与 3 整除的特性类似。</span></li><li><span>被 4 和 25 整除特性：只看一个数字的末 2 位能不能被 4 整除。</span></li><li><span>被 5 整除特性：末尾是 O 或者是 5 即可被 5 整除。</span></li><li><span>被 6 整除特性：兼被 2 和 3 整除的特性。</span></li><li><span>被 8 和 125 整除特性：看一个数字的末 3 位。</span></li><li><span>被 7,11,13 整除的这个方法叫做末三位划分法</span></li></ol><ul><li><span>被 7 整除的特性：一个数字的末三位划分，大的数字减去小的 数字，除以 7，能整除就说明这个数能被 7 整除。 </span></li><li><span>被 11 整除的特性：一个数字的末三位划分，大的数字减去小 的数字，除以 11，能整除就说明这个数能被 11 整除。 </span></li><li><span>被 13 整除的特性：一个数字的末三位划分，大的数字减去小 的数字，除以 13，能整除就说明这个数能被 13 整除。</span></li></ul><h3><a name="2关于整除的其他注意事项" class="md-header-anchor"></a><strong><span>2、关于整除的其他注意事项</span></strong><span> </span></h3><p><span>（1）被其他合数整除的数字特性，应将该合数进行因数分解，能同时被分解后的互质 </span></p><p><span>因数整除，比如被 28 整除的数字，需同时被 4 和 7 整除。 </span></p><p><strong><span>（2）三个连续的自然数之和（积）能被 3 整除。</span></strong><span> </span></p><p><span>（3）四个连续的自然数之和是偶数，但不能被 4 整除。 </span></p><p><strong><span>（4）平方数的尾数只能是 0、1、4、5、6、9。</span></strong><span> </span></p><p>&nbsp;</p><h2><a name="二奇偶性" class="md-header-anchor"></a><span>二、</span><strong><span>奇偶性</span></strong></h2><p><mark><strong><span>自然数只要不是奇数就是偶数。</span></strong></mark><span> </span></p><p><span>奇数：不能被 2 整除的数都是奇数 </span></p><p><span>偶数：可以被 2 整除的数都是偶数</span></p><p><mark><strong><span>0 也是偶数</span></strong></mark></p><p><strong><span>奇数和偶数的运算规律：</span></strong><span> </span></p><p><span>奇数±奇数=偶数；偶数±偶数=偶数； </span></p><p><span>奇数±偶数=奇数；奇数×奇数=奇数； </span></p><p><span>偶数×偶数=偶数；奇数×偶数=偶数。</span></p><p><mark><strong><span>2个数和差奇偶性相同</span></strong></mark></p><p><span style='color:red;'><strong><span>奇偶性的使用时机</span></strong><span> </span></span></p><p><span style='color:blue;'><span>1：明显的偶数倍关系 </span></span></p><p><span style='color:blue;'><span>2：已知两者之和求差，已知两者之差求和,（和差倍比）  </span></span></p><p><span style='color:blue;'><span>3：形如 ax＋by＝c 的形式 </span></span></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name="三质合性" class="md-header-anchor"></a><strong><span>三、质合性</span></strong></h2><p><strong><span>质数：如果一个大于 1 的正整数，只能被 1 和它本身整除，那么这个正整数叫做质数</span></strong><span> </span></p><p><strong><span>（质数也称素数），如 2、3、5、7、11、13…</span></strong><span>… </span></p><p><strong><span>合数：一个正整数除了能被 l 和它本身整除外，还能被其他的正整数整除</span></strong><span>， </span></p><p><span>这样的正整数叫做合数，如 4、6、8、9、10…… </span></p><p>&nbsp;</p><p><strong><mark><span>2 是唯一一个为偶数的质数。</span></mark></strong></p><p><span>如果两个质数的和（或差）是奇数，那么其中必有一个数是 2； </span></p><p><span>如果两个质数的积是偶数，那么其中也必有一个数是 2。</span></p><p>&nbsp;</p><h2><a name="四公约数与公倍数" class="md-header-anchor"></a><strong><span>四</span></strong><span>、</span><strong><span>公约数与公倍数</span></strong></h2><h3><a name="1核心知识" class="md-header-anchor"></a><span>1、</span><strong><span>核心知识</span></strong><span> </span></h3><p><strong><span>（1）约数与倍数</span></strong><span> </span></p><p><span>若数 a 能被 b 整除，则称数 a 为数 b 的倍数，数 b 为数 a 的约数。其中，一个数的最小 </span></p><p><span>约数是 1，最大约数是它本身。 </span></p><p><strong><span>（2）公约数与最大公约数</span></strong><span> </span></p><p><span>几个自然数公有的约数，叫做这几个自然数的公约数。 </span></p><p><span>公约数中最大的一个，称为这几个自然数的最大公约数。 </span></p><p><strong><span>（3）公倍数与最小公倍数</span></strong><span> </span></p><p><span>几个自然数公有的倍数，叫做这几个自然数的公倍数。 </span></p><p><span>公倍数中最小的一个，称为这几个自然数的最小公倍数。 </span></p><p><span>考试题型一般是已知两个数，求它们的最大公约数或最小公倍数。</span></p><h3><a name="2求最大公约数和最小公倍数" class="md-header-anchor"></a><span>2、</span><strong><span>求最大公约数和最小公倍数</span></strong></h3><p><mark><span>A、把共同的质因数连乘起来，就是这两个数的最大公约数。</span></mark><span> </span></p><p><mark><span>B、把共同的质因数和各自独有的质因数连乘起来，就是这两个数的最小公倍数。</span></mark></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name="五同余问题" class="md-header-anchor"></a><strong><span>五、同余问题</span></strong></h2><p><span>同余，即余数相同</span></p><h3><a name="公务员考试中的四种常考形式" class="md-header-anchor"></a><strong><span>公务员考试中的四种常考形式</span></strong></h3><p><span style='color:blue;'><strong><span>经典口诀：余同取余，和同加和，差同减差，最小公倍做周期。</span></strong></span></p><p><mark><strong><span>（1）余同取余，公倍数做周期</span></strong></mark><span>：如果一个数除以几个不同的数，余数相同，则这个数 </span></p><p><span>可以表示成这几个除数的最小公倍数的倍数与余数相加的形式。例如一个数除以 3 余 1，除 </span></p><p><span>以 4 余 1，除以 10 余 1，则这个数可以表示为 60n+1，60 是 3、4、10 的最小公倍数， </span></p><p><span>n=0,1,2，，，，，。 </span></p><p><mark><strong><span>（2）和同加和，公倍数做周期：</span></strong></mark><span>如果一个数除以几个不同的数，除数与余数之和相同， </span></p><p><span>则这个数可以表示成这几个除数的最小公倍数的倍数与该和（除数与余数之和）相加的形式。 </span></p><p><span>例如一个数除以 5 余 4，除以 6 余 3，除以 8 余 1，则这个数可以表示为 120n+9，120 是 5、 </span></p><p><span>6、8 的最小公倍数，9=5+4=6+3=8+1， n=0,1,2，，，，，。 </span></p><p><mark><strong><span>（3）差同减差，公倍数做周期：</span></strong></mark><span>如果一个数除以几个不同的数，除数与余数之差相同， </span></p><p><span>则这个数可以表示成这几个除数的最小公倍数的倍数与该差（除数与余数之差）相减的形式。 </span></p><p><span>例如一个数除以 3 余 1，除以 4 余 2，除以 10 余 8，则这个数可以表示为 60n-2，60 是 3、4、 </span></p><p><span>10 的最小公倍数，2=3-1=4-2=10-8， n=1,2，，，，，。 </span></p><p><mark><strong><span>（4）如果三个不符合口诀，怎么办？先两个结合，再跟第三结合！</span></strong></mark><span> </span></p><p>&nbsp;</p><h2><a name="六乘方尾数" class="md-header-anchor"></a><span>六、</span><strong><span>乘方尾数</span></strong></h2><p>&nbsp;</p><p><strong><span>经典口诀：底数留个位，指数除 4 留余数，余数为 0 转成 4</span></strong></p><p><span>例子：1234^2008   2008/4整除，那么1234^2008的位数应该是等于4^4的位数，也是6</span></p><p>&nbsp;</p><h2><a name="七不定方程" class="md-header-anchor"></a><strong><span>七、不定方程</span></strong><span> </span></h2><p><span>解不定方程问题常用的解法：综合利用整数的</span><mark><strong><span>奇偶性</span></strong></mark><span>、自然数的</span><strong><mark><span>质合性</span></mark></strong><span>、数的</span><mark><strong><span>整除特性</span></strong></mark><span>、 </span><mark><span>尾数法</span></mark><strong><span>、</span></strong><span>余数特性、</span><mark><span>特殊值法、代入排除法</span></mark><span>等多种数学知识来得到答案</span></p><p><mark><strong><span>我们在解决不定方程时需要注意两点：</span></strong></mark><span> </span></p><ul><li><span>对于不定方程，我们一般只讨论他的整数解或正整数解 </span></li><li><span>解不定方程要善用整除特性，奇偶性，特值法和代入排除法。（）</span></li></ul><p><strong><span style='color:blue'><span>使用整除特性时要选取最大公约数</span></span></strong></p><p>&nbsp;</p><p>&nbsp;</p><h1><a name="数列" class="md-header-anchor"></a><strong><span>数列</span></strong></h1><h2><a name="一等差数列" class="md-header-anchor"></a><strong><span>一、等差数列</span></strong></h2><p>&nbsp;</p><p><mark><strong><span>等差数列求和公式：</span></strong></mark><span> </span></p><ul><li><span>S=平均数×项数 </span></li><li><span>S=中位数×项数</span></li></ul><p><strong><span>特别注意：</span></strong><span>只有当项数为奇数项的时候，才会有中位数（即平均数、中间项）。如果项数是偶数的情况下，不存在中位数，但是我们可以</span><mark><span>虚拟一个中位数</span></mark><span>，比如 2,3,4,5 的等差数 列，我们可以虚拟一个中位数 3.5，也就是 3 与 4,2 与 5 的平均数。</span></p><p>&nbsp;</p><p><strong><mark><span>如果等差数列的下标和（或差）相等，那么对应的数相加和相等</span></mark></strong><span>，即如果等差数列有 7 项，分别为 a1、a2、a3、、、、、、a7，因此有 a1+a7=a2+a6=a3+a5=a4+a4。 </span></p><p>&nbsp;</p><h2><a name="二等比数列" class="md-header-anchor"></a><strong><span>二、等比数列</span></strong></h2><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572170692375.png" referrerpolicy="no-referrer" alt="1572170692375"></p><p>&nbsp;</p><p><strong><span>等比中项：</span></strong><span>如果 a,b,c 成等比数列，则 b 叫做 a 与 c 的等比中项，有：b^2=ac。</span></p><p>&nbsp;</p><h1><a name="计数模型" class="md-header-anchor"></a><strong><span>计数模型</span></strong></h1><h2><a name="一鸡兔同笼" class="md-header-anchor"></a><strong><span>一、鸡兔同笼</span></strong></h2><p><strong><span>核心公式：</span></strong><span> </span></p><p><span>鸡数=（兔脚数×总头数一总脚数）÷（兔脚数一鸡脚数）； </span></p><p><span>兔数=（总脚数一鸡脚数×总头数）÷（兔脚数一鸡脚数）。</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><h1><a name="排列组合" class="md-header-anchor"></a><strong><span>排列组合</span></strong></h1><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572680441579.png" referrerpolicy="no-referrer" alt="1572680441579"></p><p>&nbsp;</p><h2><a name="一两个原理" class="md-header-anchor"></a><strong><span>一、两个原理</span></strong></h2><ul><li><strong><span>分类加法</span></strong></li><li><strong><span>分布乘法</span></strong></li></ul><h2><a name="二排列组合" class="md-header-anchor"></a><strong><span>二、排列组合</span></strong></h2><p>&nbsp;</p><p><mark><strong><span>排列</span></strong></mark><span>：从m个元素中任取m个元素并排序 </span></p><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572680743493.png" referrerpolicy="no-referrer" alt="1572680743493"></p><p>&nbsp;</p><p><strong><mark><span>组合</span></mark></strong></p><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572680786857.png" referrerpolicy="no-referrer" alt="1572680786857"></p><p>&nbsp;</p><h2><a name="三特殊优先" class="md-header-anchor"></a><strong><span>三、特殊优先</span></strong></h2><p><strong><span>在排列组合中，对于特殊元素要优先考虑！！</span></strong></p><p>&nbsp;</p><p>&nbsp;</p><h2><a name="四捆绑法" class="md-header-anchor"></a><strong><span>四、捆绑法</span></strong></h2><p>&nbsp;</p><p><span>就是将几个人或者物体捆绑在一起，捆绑法解决的问题是</span><mark><strong><span>相邻问题</span></strong></mark></p><p><mark><span>总之就是：相邻用捆绑法</span></mark></p><p><strong><mark><span>解题思路</span></mark></strong><span>：</span></p><ol start='' ><li><span>先将相邻的元素进行捆绑</span></li><li><span>然后和其他元素进行排列组合</span></li><li><span>最后相邻的元素内部也要进行排序</span></li></ol><p>&nbsp;</p><h2><a name="五插空法" class="md-header-anchor"></a><strong><span>五、插空法</span></strong></h2><p>&nbsp;</p><p><strong><mark><span>针对不相邻问题</span></mark></strong></p><p><mark><strong><span>解题思路</span></strong></mark></p><ol start='' ><li><span>先将其他元素进行排列</span></li><li><span>然后将不相邻的元素进行插孔</span></li></ol><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572682646112.png" referrerpolicy="no-referrer" alt="1572682646112"></p><p>&nbsp;</p><h2><a name="六插板法" class="md-header-anchor"></a><strong><span>六、插板法</span></strong></h2><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572684593873.png" referrerpolicy="no-referrer" alt="1572684593873"></p><p>&nbsp;</p><p>&nbsp;</p><p><span>特殊题型</span></p><p><img src="C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1572684610357.png" referrerpolicy="no-referrer" alt="1572684610357"></p><p>&nbsp;</p><p><span>先给3个人每个人分2个，转换成没人至少一个</span></p><p><span>然后按公式计算 </span></p><p>&nbsp;</p><h2><a name="七正难则反" class="md-header-anchor"></a><strong><span>七、正难则反</span></strong></h2><p>&nbsp;</p><p><mark><span>结果 = 总 - 反面情况</span></mark></p><p>&nbsp;</p><h2><a name="八错误排列" class="md-header-anchor"></a><strong><span>八、错误排列</span></strong></h2><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n205" cid="n205" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><div class="MathJax_SVG_Display" style="text-align: center;"><span class="MathJax_SVG" id="MathJax-Element-1-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="69.914ex" height="2.227ex" viewBox="0 -755.9 30101.8 958.9" role="img" focusable="false" style="vertical-align: -0.472ex; max-width: 100%;"><defs><path stroke-width="0" id="E3-MJMATHI-44" d="M287 628Q287 635 230 637Q207 637 200 638T193 647Q193 655 197 667T204 682Q206 683 403 683Q570 682 590 682T630 676Q702 659 752 597T803 431Q803 275 696 151T444 3L430 1L236 0H125H72Q48 0 41 2T33 11Q33 13 36 25Q40 41 44 43T67 46Q94 46 127 49Q141 52 146 61Q149 65 218 339T287 628ZM703 469Q703 507 692 537T666 584T629 613T590 629T555 636Q553 636 541 636T512 636T479 637H436Q392 637 386 627Q384 623 313 339T242 52Q242 48 253 48T330 47Q335 47 349 47T373 46Q499 46 581 128Q617 164 640 212T683 339T703 469Z"></path><path stroke-width="0" id="E3-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E3-MJMAIN-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path stroke-width="0" id="E3-MJMAIN-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path stroke-width="0" id="E3-MJMAIN-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path stroke-width="0" id="E3-MJMAIN-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path stroke-width="0" id="E3-MJMAIN-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path stroke-width="0" id="E3-MJMAIN-39" d="M352 287Q304 211 232 211Q154 211 104 270T44 396Q42 412 42 436V444Q42 537 111 606Q171 666 243 666Q245 666 249 666T257 665H261Q273 665 286 663T323 651T370 619T413 560Q456 472 456 334Q456 194 396 97Q361 41 312 10T208 -22Q147 -22 108 7T68 93T121 149Q143 149 158 135T173 96Q173 78 164 65T148 49T135 44L131 43Q131 41 138 37T164 27T206 22H212Q272 22 313 86Q352 142 352 280V287ZM244 248Q292 248 321 297T351 430Q351 508 343 542Q341 552 337 562T323 588T293 615T246 625Q208 625 181 598Q160 576 154 546T147 441Q147 358 152 329T172 282Q197 248 244 248Z"></path><path stroke-width="0" id="E3-MJMAIN-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path stroke-width="0" id="E3-MJMAIN-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path stroke-width="0" id="E3-MJMAIN-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path stroke-width="0" id="E3-MJMAIN-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path stroke-width="0" id="E3-MJMAIN-2E" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><use xlink:href="#E3-MJMATHI-44" x="0" y="0"></use><use xlink:href="#E3-MJMAIN-31" x="828" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="1605" y="0"></use><use xlink:href="#E3-MJMAIN-30" x="2661" y="0"></use><g transform="translate(3161,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="3943" y="0"></use><use xlink:href="#E3-MJMAIN-32" x="4771" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="5549" y="0"></use><use xlink:href="#E3-MJMAIN-31" x="6605" y="0"></use><g transform="translate(7105,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="7887" y="0"></use><use xlink:href="#E3-MJMAIN-33" x="8715" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="9493" y="0"></use><use xlink:href="#E3-MJMAIN-32" x="10548" y="0"></use><g transform="translate(11048,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="11831" y="0"></use><use xlink:href="#E3-MJMAIN-34" x="12659" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="13436" y="0"></use><use xlink:href="#E3-MJMAIN-39" x="14492" y="0"></use><g transform="translate(14992,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="15774" y="0"></use><use xlink:href="#E3-MJMAIN-35" x="16602" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="17380" y="0"></use><g transform="translate(18436,0)"><use xlink:href="#E3-MJMAIN-34"></use><use xlink:href="#E3-MJMAIN-34" x="500" y="0"></use></g><g transform="translate(19436,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="20218" y="0"></use><use xlink:href="#E3-MJMAIN-36" x="21046" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="21824" y="0"></use><g transform="translate(22880,0)"><use xlink:href="#E3-MJMAIN-32"></use><use xlink:href="#E3-MJMAIN-36" x="500" y="0"></use><use xlink:href="#E3-MJMAIN-35" x="1000" y="0"></use></g><g transform="translate(24380,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">，</text></g><use xlink:href="#E3-MJMATHI-44" x="25162" y="0"></use><use xlink:href="#E3-MJMAIN-37" x="25990" y="0"></use><use xlink:href="#E3-MJMAIN-3D" x="26768" y="0"></use><g transform="translate(27823,0)"><use xlink:href="#E3-MJMAIN-31"></use><use xlink:href="#E3-MJMAIN-38" x="500" y="0"></use><use xlink:href="#E3-MJMAIN-35" x="1000" y="0"></use><use xlink:href="#E3-MJMAIN-34" x="1500" y="0"></use><use xlink:href="#E3-MJMAIN-2E" x="2000" y="0"></use></g></g></svg></span></div><script type="math/tex; mode=display" id="MathJax-Element-1">D1= 0，D2= 1，D3=2，D4= 9，D5= 44，D6= 265，D7= 1854.</script></div></div><p>&nbsp;</p><h2><a name="九圆周排列" class="md-header-anchor"></a><strong><span>九、圆周排列</span></strong></h2><p><span>N 个元素排列，结果 </span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n209" cid="n209" mdtype="math_block"><div class="md-rawblock-container md-math-container" tabindex="-1"><div class="MathJax_SVG_Display" style="text-align: center;"><span class="MathJax_SVG" id="MathJax-Element-2-Frame" tabindex="-1" style="font-size: 100%; display: inline-block;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="10.342ex" height="2.344ex" viewBox="0 -806.1 4452.8 1009.2" role="img" focusable="false" style="vertical-align: -0.472ex; max-width: 100%;"><defs><path stroke-width="0" id="E4-MJMATHI-4E" d="M234 637Q231 637 226 637Q201 637 196 638T191 649Q191 676 202 682Q204 683 299 683Q376 683 387 683T401 677Q612 181 616 168L670 381Q723 592 723 606Q723 633 659 637Q635 637 635 648Q635 650 637 660Q641 676 643 679T653 683Q656 683 684 682T767 680Q817 680 843 681T873 682Q888 682 888 672Q888 650 880 642Q878 637 858 637Q787 633 769 597L620 7Q618 0 599 0Q585 0 582 2Q579 5 453 305L326 604L261 344Q196 88 196 79Q201 46 268 46H278Q284 41 284 38T282 19Q278 6 272 0H259Q228 2 151 2Q123 2 100 2T63 2T46 1Q31 1 31 10Q31 14 34 26T39 40Q41 46 62 46Q130 49 150 85Q154 91 221 362L289 634Q287 635 234 637Z"></path><path stroke-width="0" id="E4-MJMAIN-2212" d="M84 237T84 250T98 270H679Q694 262 694 250T679 230H98Q84 237 84 250Z"></path><path stroke-width="0" id="E4-MJMAIN-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path stroke-width="0" id="E4-MJMAIN-21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="matrix(1 0 0 -1 0 0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">（</text><use xlink:href="#E4-MJMATHI-4E" x="782" y="0"></use><use xlink:href="#E4-MJMAIN-2212" x="1892" y="0"></use><use xlink:href="#E4-MJMAIN-31" x="2892" y="0"></use><g transform="translate(3392,0)"><text font-family="STIXGeneral,'Arial Unicode MS',serif" stroke="none" transform="scale(50.259) matrix(1 0 0 -1 0 0)">）</text></g><use xlink:href="#E4-MJMAIN-21" x="4174" y="0"></use></g></svg></span></div><script type="math/tex; mode=display" id="MathJax-Element-2">（N-1）!</script></div></div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div>
+</body>
+</html>
