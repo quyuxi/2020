@@ -1,0 +1,114 @@
+# **资料分析**
+
+[TOC]
+
+## **一、速算技巧**
+
+### 1.截位直除
+
+![1576239791836](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576239791836.png)
+
+### 2.**分数比较**
+
+![1576240242217](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576240242217.png)
+
+
+
+## 二、**如何阅读材料**
+
+![1576240446963](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576240446963.png)
+
+## 三、**基本概念**
+
+  **==基本术语==**：
+
+### 1.基期量与现期量
+
+资料分析中常涉及两个量的比较，作为对比参照的时期称为基期，对应的量
+称为基期量；而相对于基期的为现期，所对应的量称为现期量。
+
+![1576240849594](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576240849594.png)
+
+
+
+### 2.增长量与增长率
+
+（1）增长量用来表述基期量与现期量变化的绝对量。
+（2）增长率用来表述基期量与现期量变化的相对量。
+
+==增长率与倍数==：
+增长率指比基数多出的比率， 倍数指两数的直接比值。
+A 是 B 的 n 倍， 则 ==n=r+1==（r 指 A 与 B 相比的增长率）。
+==成数与翻番==：
+成数： 几成相当于十分之几；
+翻番： 翻一番为原来的 2 倍； 翻两番为原来的 4 倍； 依此类推， 翻 n 番为原来的 2^n倍。
+
+==增幅、降幅与变化幅度==：
+增幅一般就是指增长率，有正有负；
+降幅指下降的幅度，降幅比较大小时，前提必须为下降；
+变化幅度指增长或下降的绝对比率，变化幅度比较大小时用增幅（降幅的绝对值  
+
+
+
+#### 2.1  普通增长率  
+
+#### 
+
+![1576241345329](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576241345329.png)
+
+#### 2.2间隔增长率
+
+$$
+间隔增长率 r=r1+r2+r1*r2。
+$$
+
+
+
+#### 2.3**年均增长率**
+
+
+
+![1576241520225](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576241520225.png)
+
+![1576241542176](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576241542176.png)
+
+
+
+#### 2.4混合增长率
+
+![1576241636150](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576241636150.png)
+
+
+
+
+
+
+
+### 3.同比与环比
+
+（1）同比：一般和上年同一时期相比较。
+（2）环比：与相邻的上一个时期相比较。  
+
+
+
+### 4.百分数和百分点
+
+- 百分数用来反映量之间的比例关系
+- 百分点用来反映百分数的变化  
+
+
+
+
+
+### 5.增长量
+
+![1576242207862](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576242207862.png)
+
+
+
+### 6.**比重、倍数、平均数**
+
+![1576242384114](C:\Users\quyuxi\AppData\Roaming\Typora\typora-user-images\1576242384114.png)
+
+
+
